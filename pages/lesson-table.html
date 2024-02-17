@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Tables</title>
+    <style>
+       table{
+        border-color: black;
+        width: 400px;
+       }
+        th{
+            background-color: purple;
+            border: 1px solid black;
+        }
+
+        td{
+            background-color: rgb(180, 136, 180);
+            border: 1px solid blue;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- inline style css /  -->
+    <table style="border: 1px solid black;">
+        <p>==== Simple HTML Table=====</p>
+        <thead>
+            <!-- tr> ek athule tamyi th ek hadnn ona -->
+
+            <tr>
+            <th>First Name </th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Age</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+<!-- table eke heading eke piliwelatam tamayi dnn ona -->
+          <tr>
+            <td>Join</td>
+            <td>Done</td>
+            <td>12233121</td>
+            <td>asachini09@gmail.com</td>
+            <td>22</td>
+          </tr>
+        <tr>
+            
+            <td>Sachini</td>
+            <td>Apsara</td>
+            <td>12233121</td>
+            <td>asachini09@gmail.com</td>
+            <td>22</td>
+        </tr>
+           
+        </tbody>
+        <tfoot></tfoot>  
+
+    </table>
+
+     <p>==== Create New Table=====</p>
+    <!-- creatte table next create shakshaon / thead/tbody/tfoot  -->
+    <!-- inline style css /  -->
+    <table style="border: 1px solid black;">
+        <thead>
+            <!-- tr> ek athule tamyi th ek hadnn ona -->
+    
+            <tr>
+                <th>Item name</th>
+                <th>Description</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                
+            </tr>
+    
+        </thead>
+        <tbody>
+            <!-- table eke heading eke piliwelatam tamayi dnn ona -->
+            <tr>
+                <td>Choco</td>
+                <td>Rchbery</td>
+                <td>2</td>
+                <td>300</td>
+               
+            </tr>
+            <tr>
+                <td>Tady</td>
+                <td>Roce</td>
+                <td>2</td>
+                <td>3000</td>
+            
+            </tr>
+
+            <tr>
+                <td>ice copy</td>
+                <td>chocalate</td>
+                <td>4</td>
+                <td>400</td>
+            
+            </tr>
+
+            
+        </tbody>
+        <tfoot>
+
+            <tr>
+        
+            <td>Total :</td>
+            <td></td>
+           <td></td>
+            <td>Rs.3700.00</td>
+        
+           </tr>
+
+    </tfoot>
+    </table>
+
+
+    <p>==== Create New Table colspan=====</p>
+    <!-- creatte table next create shakshaon / thead/tbody/tfoot  -->
+    <!-- inline style css /  -->
+    <table style= "width: 400px; text-align: center;">
+
+       
+        
+            <!-- table eke heading eke piliwelatam tamayi dnn ona -->
+            <tr style="height: 100px;">
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td>4</td>
+    
+            </tr>
+            <tr style="height: 100px;">
+                <td>5</td>
+                <td colspan="3">6</td>
+                
+               
+    
+            </tr>
+    
+            <tr style="height: 100px;">
+                <td >9</td>
+                <td colspan="2">10</td>
+                
+                <td>12</td>
+    
+            </tr>
+    
+            <tr style="height: 100px;">
+    
+                <td colspan="3">13</td>
+               
+                <td>16</td>
+    
+            </tr>
+    
+        
+</table>
+
+<p>=======Create New Table rowspan=======</p>
+
+<table style= "width: 400px; text-align: center;">
+    <tr style="height: 100px;">
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr style="height: 100px;">
+        <td rowspan="3">6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+    </tr>
+    <tr style="height: 100px;">
+        <td rowspan="2">9</td>
+       
+        <td>11</td>
+        
+    </tr>
+    <tr style="height: 100px;">
+     
+       
+        <td>15</td>
+       
+    </tr>
+</table>
+</body>
+</html>

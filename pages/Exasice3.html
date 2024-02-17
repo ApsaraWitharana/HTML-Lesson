@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-color: black;
+        width: 400px;
+        border-collapse: collapse;
+        
+    }
+
+    th {
+       
+        border: 1px solid black;
+        background-color: blueviolet;
+         text-align: left;
+    }
+    
+
+    td {
+      
+        border: 1px solid blue;
+        background-color: rgb(182, 127, 237);
+        padding: 10px;
+        text-align: left;
+    }
+
+    button{
+
+        background-color: rgb(71, 31, 145);
+    }
+
+
+</style>
+<body>
+</table>
+<table style="border: 1px solid black; height: 400px; height: 300px;">
+    <thead>
+       
+
+        <tr>
+        <th colspan="3" >Personal Information</th>
+        </tr>
+
+    </thead>
+    <tbody>
+       
+        <tr>
+            <td >Name:</td>
+            <td colspan="2"><input type="text"  /></td>
+           
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td colspan="2"><input type="text" /></td>
+        
+        </tr>
+        <tr>
+      <td rowspan="3">Address:</td>
+      <td>Street:</td>
+    <td ><input type="text" /></td>
+    
+      <tr>
+    <td>City:</td>
+    <td><input type="text" /></td>
+
+      </tr>
+   
+    <tr>
+    <td>Zip Code:</td>
+    <td><input type="text" /></td>
+
+    </tr>
+    <tr>
+        <th colspan="3">Additional Infromatiion</th>
+    </tr>
+    <tr>
+    <td colspan="3"><textarea name="massage" id="" cols="50" rows="10" placeholder="Enter Your massage...."></textarea></td>
+    </tr>
+
+<tr>
+    <td colspan="3"><button type="submit">Submit</button></td>
+</tr>   
+    </tfoot>
+</body>
+</html>
