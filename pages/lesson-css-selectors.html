@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Selectors</title>
+
+    <style>
+        h2{
+            color: blue;
+        }
+
+        #main-heading{
+          color: rgb(32, 65, 65);
+        }
+
+        /*class ek include wela tiyen hama ektma ek applie we*/
+
+        .heading-selector{
+            color: brown;
+        }
+
+
+        input[type="text"] {
+            color: black;
+            background-color: rgb(134, 98, 98);
+        }
+
+        button:hover{
+            background-color: cornflowerblue;
+            color: red;
+            cursor: pointer;
+
+        }
+
+        /*Pseudo eliment*/
+
+        p::first-line{
+            color: red;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    =====1.Eliment selectors======
+
+    <h2>Eliment Selectors</h2>
+
+    =====2. ID selectors=====
+ 
+    <h2 id="main-heading">ID selectors</h2>
+
+    ===3.Clss selectors=====
+
+    <h2 class="heading-selector">Clss Selectors</h2>
+    <h3 class="heading-selector">Clss Selectors</h3>
+    <h4 class="heading-selector">Clss Selectors</h4>
+
+     <p class="heading-selector">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aperiam expedita architecto rem vero et obcaecati nisi, animi excepturi possimus dolore sapiente numquam inventore sunt minus! Impedit quo atque ducimus!</p>
+
+     ===== 4.Attribute selectora ======
+<br/>
+
+<input type="text" placeholder="Enter your name">
+
+<input type="number" placeholder="Enter your number">
+
+
+<br/>
+
+=====5.Psedio classes selector=====
+<br/>
+<button>Click me</button>
+
+
+====6.Psedio elements selector======
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis, quae nesciunt veniam quia dolores vitae quis, aut tenetur
+     hic consectetur reprehenderit. Maiores ullam magnam aut officia quaerat id tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa rerum reiciendis nam aliquam, libero consequatur saepe temporibus iste eum numquam explicabo nisi quam neque? Deleniti dolorem eveniet quia libero!</p>
+====7.
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo eliment</title>
+
+    <style>
+        button{
+            color: aliceblue;
+            background-color: black;
+        }
+
+      /*button ek lagt giyam cerser ek action ekk enne*/
+        button:hover{
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+        /*button click krama action ekk enne*/
+
+        button:active{
+
+            background-color: aqua;
+            color: black;
+
+        }
+
+        /*eliment wl position gnna kot Pseudo yede/button wlt enawa*/
+        /*nth-ona li ekta dann puluwn*/
+
+        li:first-child{
+            color: rgb(187, 36, 79);
+        }
+
+        li:nth-child(3){
+            color: blueviolet;
+        }
+        
+        li:nth-child(4){
+            color: green;
+        }
+         
+        li:last-child{
+            color: blue;
+        }
+
+        /*pseudo eliment*/
+
+        p::before{
+
+            content: "Reade this lesson....";
+            color: blueviolet;
+
+
+        }
+
+        p::after{
+            content: "The end....";
+            color: blue;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+            color: green;
+        }
+
+        p::first-line{
+            font-weight: bold;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Lesson Pseudo </h1>
+
+    <h2>========== Pseudo class ================</h2>
+
+    <button>Click me</button>
+
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaSript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <h2>==============Psedo eliment========</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum id deserunt iure exercitationem hic laudantium voluptate pariatur quod alias eligendi expedita excepturi iusto totam similique ipsum aliquid, possimus minus iste! Lorem ipsum dolor,
+         sit amet consectetur adipisicing elit. Aut corrupti repudiandae nesciunt laudantium exercitationem quia porro incidunt nostrum eveniet impedit at, quis blanditiis id numquam eaque aliquid? Est, vero nesciunt?</p>
+
+
+</body>
+</html>
