@@ -1,0 +1,52 @@
+p{
+    color: blue;
+
+}
+/*class*/
+.content{
+    color: rgb(27, 159, 100);
+}
+
+#content-id{
+    color: red;
+    
+}
+
+/* 6.-->eliment*/
+
+h4{
+    color: blue;
+}
+/* 4.-->class*/
+.card-title{
+    color: red;
+}
+/*2.-->id*/
+
+#recipe-card-title{
+    color: green;
+}
+/*5-->2 eliment*/
+div h4{
+    color: orangered;
+}
+/*3.--->one eliment one class*/
+div.card-title{
+    color: cyan;
+}
+
+/* 1.---one eliment one id*/
+div #recipe-card-title{
+    color: darkgoldenrod;
+}
+
+/*.-->2class*/
+div.card-title h4.content{
+    color: rgb(208, 89, 166);
+}
+
+/*.-->2id*/
+div #recipe-card-title h4 #recipe-card-content-id {
+    color: darkred;
+}
+

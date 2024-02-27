@@ -26,6 +26,12 @@
             background-color: rgb(134, 98, 98);
         }
 
+        input[type="number"] {
+            color: rgb(30, 15, 15);
+            background-color: rgb(19, 117, 98);
+        }
+
+
         button:hover{
             background-color: cornflowerblue;
             color: red;
@@ -36,9 +42,38 @@
         /*Pseudo eliment*/
 
         p::first-line{
-            color: red;
+            color: rgb(190, 187, 198);
             font-weight: bold;
 
+        }
+ 
+        /* Descendant selector div ek athule tiyen h4 ek allnna*/
+          
+        div h4{
+            color: blue;
+        }
+
+        div div h4{
+            color: green;
+        }
+
+        /*child eliment*/
+
+        div > h5{
+            font-weight: bold;
+            font-style: italic;
+            color: chocolate;
+        }
+
+        /*siblince ek lewel eke tiyen ewa */
+       
+        h2 + p {
+            color: blue;
+            background-color: rgb(27, 119, 106);
+        }
+
+        h3 ~ p{
+            background-color: rgb(32, 152, 70);
         }
 
     </style>
@@ -72,16 +107,81 @@
 
 <br/>
 
-=====5.Psedio classes selector=====
+          =====5.Psedio classes selector=====
 <br/>
 <button>Click me</button>
 
 
-====6.Psedio elements selector======
+          =====6.Psedio elements selector=====
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis, quae nesciunt veniam quia dolores vitae quis, aut tenetur
-     hic consectetur reprehenderit. Maiores ullam magnam aut officia quaerat id tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa rerum reiciendis nam aliquam, libero consequatur saepe temporibus iste eum numquam explicabo nisi quam neque? Deleniti dolorem eveniet quia libero!</p>
-====7.
+     hic consectetur reprehenderit. Maiores ullam magnam aut officia quaerat id tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa rerum reiciendis nam aliquam, 
+     libero consequatur saepe temporibus iste eum numquam explicabo nisi quam neque? Deleniti dolorem eveniet quia libero!</p>
 
+
+     =======7.Descendant selector (white space combinater)======
+
+
+<div>
+<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate optio culpa id soluta
+    corporis assumenda blanditiis aliquid vero animi voluptas temporibus eos laborum molestias
+    suscipit, magni officia tempore praesentium alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Veritatis eveniet corrupti, sit distinctio odit quia repellendus molestias, dolorum debitis nam fuga, nostrum vero.
+    Nesciunt excepturi cupiditate repudiandae assumenda labore saepe. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Sapiente sunt ve
+    l in quasi, ea aspernatur minima hic quo deserunt obcaecati excepturi error autem nobis
+    veritatis ipsam voluptatem tempora delectus qui?</h4>
+    <div>
+
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis tempore mollitia obcaecati,
+             delectus et ullam sed blanditiis at doloremque incidunt ad, laboriosam inventore suscipit rerum amet numquam, totam iusto? 
+        </h4>
+    </div>
+
+</div>
+           
+          
+    =======8.Child selector  (>)======
+
+
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>HTML</h5>
+        <h5>CSS</h5>
+    </div>
+
+
+        =======9.Adjacent sibiling selector (+)======
+
+        <!--lagama tiyen ekt witarayi sibling lage ewa appli wenne-->
+
+        <h2>Hedding 2</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, fugiat iusto 
+            ad hic ex, ut, nobis officiis blanditiis voluptas sed repellendus. Tempora, quasi! Dolorum,
+             laborum. Consequuntur doloribus non fugiat id.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, fugiat iusto
+                ad hic ex, ut, nobis officiis blanditiis voluptas sed repellendus. Tempora, quasi! Dolorum,
+                laborum. Consequuntur doloribus non fugiat id.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, fugiat iusto
+                    ad hic ex, ut, nobis officiis blanditiis voluptas sed repellendus. Tempora, quasi! Dolorum,
+                    laborum. Consequuntur doloribus non fugiat id.</p>
+
+
+      =======10.Genaral sibiling selector (+)======
+
+      <h3>Hedding3</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, recusandae ea neque
+         consequatur ullam nam obcaecati unde iste velit optio consequuntur id, ut officia? Asperiores ad provident fugit ullam quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum alias amet error ullam ipsam, harum dignissimos corrupti consequatur earum aliquam animi! Ipsum vel unde alias aspernatur iure cum? Natus, modi. </p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam pariatur sed, excepturi velit laboriosam architecto non nihil 
+            itaque adipisci voluptatem deserunt perferendis dolorem alias vitae dignissimos perspiciatis! Aut, reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ullam excepturi quibusdam illo unde officiis consectetur, at provident esse, vero sed nemo et impedit ab! Soluta minima quas deleniti magni!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quasi sit dicta cum. Reiciendis dolor distinctio
+                 sunt reprehenderit officiis in sed delectus qui quas rerum odio, illo aperiam maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex quibusdam repellat, et voluptas libero corporis blanditiis fugiat expedita. Nemo tenetur suscipit voluptatibus repudiandae esse ea quibusdam quis, provident debitis.
+            </p>
 </body>
 </html>
