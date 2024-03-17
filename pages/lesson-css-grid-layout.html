@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+
+    <style>
+        .container{
+            /* display flex dmma thiras wenawa et grid wl em ne */
+            display: grid;
+            /* manuwali colom tik hadenn ona widiy kiyl */
+            /* grid-template-columns: 200px 200px 200px 200px 200px; */
+                        /* grid-template-columns: 20% 20% 20% 20% 20%; */
+
+                        /* apit ona colum gant dgnnawa fr //2fr dmmot ek col 2k ektuwela hadil tiyenne 2fr=*/
+                        /* grid-template-columns: 1fr 1fr 1fr ; */
+
+                        /* 3-mulin dek argument ekk 1fr ekk 3n parak repede wenawa ///2 parak allann 1fr/2fr */
+
+                         grid-template-columns: repeat(1,  1fr 2fr 1fr );  
+                         /* row col atara gap ekk dnn  // gap:5px*/
+
+                         column-gap: 5px;
+                         row-gap: 5px;
+    
+
+
+        }
+        .container>div {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        /* colom walata color dagnn */
+        .container>div:nth-child(odd){
+            background-color: green;
+
+        }
+        
+        .next{
+            display: grid;
+            grid-template-columns: repeat(3,  1fr  );
+
+
+        }
+        .next>div{
+            padding: 8px;
+            border: 1px solid black;        
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div > 1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur ipsum optio architecto fuga cupiditate, repudiandae obcaecati unde rem expedita ut illum dolores, voluptas et tenetur autem officiis enim veritatis.</div>
+    <div> 2orem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore maiores sunt eveniet, sint qui! Tenetur voluptatum dignissimos exercitationem omnis! Nemo ad unde eligendi esse distinctio atque officiis ipsum debitis.</div>
+    <div> 3Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quidem unde officia. Eos debitis dolores tempora explicabo sint? Magnam a laborum quasi accusamus eveniet quia, debitis minima nihil voluptates vero.</div>
+        <div> 4Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quidem unde officia. Eos debitis dolores tempora
+            explicabo sint? Magnam a laborum quasi accusamus eveniet quia, debitis minima nihil voluptates vero.</div>
+                <div class="next" >
+                <div>one</div>
+                <div>tow</div>
+                <div>three</div>
+                </div>
+    <div> 6 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur ipsum optio architecto fuga
+        cupiditate, repudiandae obcaecati unde rem expedita ut illum dolores, voluptas et tenetur autem officiis enim
+        veritatis.</div>
+
+            <div> 7 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur ipsum optio architecto fuga
+                cupiditate, repudiandae obcaecati unde rem expedita ut illum dolores, voluptas et tenetur autem officiis enim
+                veritatis.</div>
+
+                    <div> 8 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur ipsum optio architecto fuga
+                        cupiditate, repudiandae obcaecati unde rem expedita ut illum dolores, voluptas et tenetur autem officiis enim
+                        veritatis.</div>
+
+                    </div>
+</body>
+</html>

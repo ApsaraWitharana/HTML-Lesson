@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 60px;
+
+            /* wertical- tiras / horation-harahata */
+        }
+        .box1{
+            background-color: blueviolet;
+        }
+        .box2{
+            background-color: rgb(30, 200, 160);
+        }
+        .box3{
+            background-color: rgb(9, 51, 130);
+        }
+        .box4{
+            background-color: rgb(131, 14, 14);
+        }
+
+        .container{
+
+            border: 10px solid black;
+            height: 100vh;
+           /* horation-harahata --row nm tiras --colum nm siras -(flex diration -dishawa)*/
+            display: flex;
+            /* flex-direction:row;  -by default  //colum*/
+
+            /* flex-direction: column-reverse; */
+             flex-direction:row; 
+
+             /* line walat anuwa beda gnnawa */
+               /* flex-wrap: nowrap; */
+             flex-wrap: wrap;
+
+             /* ===JUSTIFY=== */
+           /* conten ek madata gtta //main eke eha meha geniynne*/
+            justify-content:center;
+
+            /* card atara space ekk tiyagg depattatt ekk ida hadenawa / nttm space bitween dnn */
+            justify-content: space-around;
+
+            /* hama space ek ataram tiyen space ek ek wage */
+            /* justify-content:space-evenly ; */
+
+                /* ====ALIGN==== */
+            /* colum walat tamayi enne ALIGN -crosecc asse wal wada krnne */
+             /* align-items: flex-start; */
+             /* align-items: last baseline; */
+             align-items: center;
+             /* box eke ytt dagnna /madata gnn */
+             align-content: center;
+             /* align-content: end; */
+
+            
+
+            /* harahat box 2k atara space ekk gnn /row / colum*/
+         /* row-gap: 20px;
+         column-gap: 20px; */
+          gap: 20px;
+
+
+
+
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box1">5</div>
+        <div class="box box2">6</div>
+        <div class="box box3">7</div>
+        <div class="box box4">8</div>
+        <div class="box box1">9</div>
+        <div class="box box2">10</div>
+        <div class="box box3">11</div>
+        <div class="box box4">12</div>
+        <div class="box box1">13</div>
+        <div class="box box2">14</div>
+        <div class="box box3">15</div>
+        <div class="box box4">16</div>
+        <div class="box box3">17</div>
+        <div class="box box4">18</div>
+        
+
+    </div>
+    
+
+
+</body>
+</html>

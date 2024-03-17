@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson animation</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: square;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            /* animation ek kiparak wenn onen da kiyl //infinite wenne jiwithakaletam ek wwenn one nm*/
+
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation:  up-down 10s linear infinite ; 
+
+
+            
+        }
+        /* .box1{
+            width: 200px;
+            height: 200px;
+            top: 100px;
+            left: 100px;
+            background-color: black;
+            position: relative;
+            animation-name: cover;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            margin: auto;
+
+
+        } */
+
+       @keyframes up-down{
+
+
+            0%{
+
+               top:100px;
+               left: 100px; 
+               
+              
+            }
+           
+            50%{
+                top: 500px;
+                left: 500px;
+                transform : translateY(0)
+               
+                 border-radius: 10px;
+                
+            }
+
+            /* 75%{
+                top: 500px;
+                left: 100px;
+                 border-radius: 50px;
+                  transform : translateY(-32)
+            }
+            */
+
+            /* 100%{
+                top: 100px;
+                left: 100px;
+                border-radius: 100px;
+                 transform : translateY(32)
+            } */
+
+        }
+        @keyframes cover{
+
+
+            0%{
+
+               top:100px;
+               left: 100px; 
+               
+              
+            }
+            25%{
+                top: 100px;
+                left: 500px;
+                 border-radius: 10px;
+                  /* scaleZ--loku krnawa */
+                /* loku karann danne */
+                 transform :scale(2);
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+               
+                 border-radius: 10px;
+                
+            }
+
+            75%{
+                top: 500px;
+                left: 100px;
+                 border-radius: 50px;
+            }
+           
+            100%{
+                top: 100px;
+                left: 100px;
+                border-radius: 100px;
+            }
+        }
+        /* css ruls  idenntifier---animation dan name ekm denna one ==========rules========*/
+        /* @keyframes square {
+            /* meke idan from dan tiyen ek -- to dann one ek*/
+          /* from{
+            background-color : blue;}
+          to {
+            background-color : green;} */
+
+            /* from-to ekm 0,100,50,75,25 */
+           
+            /* 0%{
+                background-color: blue;
+            }
+
+            100%{
+                background-color: green;
+            }
+
+            50%{
+                background-color: rgb(28, 101, 144);
+            }
+            
+        } */ */
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="cercal"></div>
+
+
+</body>
+</html>

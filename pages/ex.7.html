@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         body{
+            margin: 0;
+            font-family: Arial,  sans-serif;
+            background-color: burlywood;
+         }
+        header{
+            border: 1px solid black;
+            display: flex;
+            /* flex direction dmmam eke heder ehe peliyt set wenawa */
+            flex-direction: row;
+            /* main acces ek anuwa row nm corosecc werticl // colom nm wertical tiras main ek tiras eke wirudd ek //mad space ekk dgnn*/
+            justify-content:space-between ;
+            background-color: bisque;
+
+        }
+        #logo-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover; 
+
+            margin-right:12px;
+            
+            /*  //pic eke penuma hadann */
+        }
+        .logo-con{
+            /* //image ekata ehapattat nm gnnn */
+            display: flex;
+        }
+        .nav-card>ul{
+            /* hedr eke ewa hdnn */
+           display: flex;
+        }
+
+        .nav-card > ul>li{   
+          display: flex;
+        list-style-type: none;   
+     }
+
+       .nav-card>ul{
+     
+     }
+
+     .nav-card>ul>li{
+            /* hedr eke space */
+          margin: 0 8px;
+     }
+        .nav-card>ul>li>a{
+            /* underline ek ayinkrnn */
+          text-decoration: none;
+          color: black;
+
+        }
+
+        .intro-contain{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 12px;
+
+        }
+        .intro-container{
+          display: flex;
+        }
+
+        #intro-image{
+          /* main ek haraha senter krnn nm just difain contain senter -- */
+            width: 50%;
+            height: 90vh;
+           border-bottom-left-radius: 20px;
+           border-top-left-radius: 20px;
+
+
+        }
+        .socia-media>a>img{
+            width: 25px;
+            height: 28px;
+           
+          
+        }
+        .text-grid{
+            display: grid;
+            grid-template-columns: repeat(1 1fr);
+            gap: 12px;
+            padding: 12px;
+        }
+        .text-card{
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
+        .text-card>h2{
+            text-align: center;
+        }
+        .tec-image{
+            border-radius: 12px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- heder -->
+  <header>
+    <div class="logo-con">
+    <img id="logo-image" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="logo image">
+    <h3>Sachini Apsara</h3>
+    </div>
+    <nav class="nav-card">
+        <ul>
+            <li> <a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">About</a></li>
+            <li><a href="#" target="_blank">Project</a></li>
+            <li><a href="#" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+  </header>
+    <!-- intro -->
+    <div class="intro-container">
+        <div class="intro-contain"></div>
+        <h1>Welcom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat ullam a. Ipsa, qui aliquid perspiciatis, reiciendis odio eos delectus distinctio commodi tenetur repudiandae eaque fugiat harum voluptas molestias architecto?</p>
+        <div class="socia-media">\
+            <a href="https:/facebook.com" target="_blank"> <img src="/assets/icon/icons8-facebook-48 (2).png" alt="face"></a>
+            <a href="https:/facebook.com" target="_blank"> <img src="/assets/icon/icons8-facebook-48 (2).png" alt="face"></a>
+            <a href="https:/facebook.com" target="_blank"> <img src="/assets/icon/icons8-facebook-48 (2).png" alt="face"></a>
+        
+        
+        </div>
+
+        <img id="intro-image" src="/assets/Image/ai-generated-8557369_640.webp" alt="">
+        
+    </div>
+
+    <!-- tech -->
+    <div class="text-tag">
+        <h1>My</h1>
+          <div class="text-grid">
+          <div class="text-card">
+            <img class="tec-image" src="/assets/Image/java.jpg" alt="">
+            <h2>java</h2>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(24, 233, 52);
+            /* tiyen tn wens krnn  madata gnn*/
+            margin: 200px auto;
+            /* transition krn eke nm //dann wenas krnn ona property eke nm dnn ona */
+            /* transition-property: width;
+            transition-property: height;
+            transition-property:  background-color;
+            /* kochchar welawkd kiyl */
+            /* transition-duration: 1s;
+            transition-duration: 1s; */
+
+                /* wena de wenas wenas wenn yn */
+            /* transition-timing-function: ease; */
+            /* dole krnn ona welawa - maws ek arn yn welawa */
+            /* transition-delay: 2s; */
+
+           /* hight width: dektm ek par dmmam all dnn; */
+
+            transition-property: all;
+            
+            /* line4 n krn ek ekkin krnn //all dann puluwan*/
+            /* transition : width 1s ease 2s; */
+
+
+        }
+
+        .box:hover{
+
+            /* sudo-eliment box eke walue ek change ek*/
+
+            width: 300px;
+            height: 400px;
+            background-color: rgb(29, 64, 6);
+        }
+        .text{
+            color: blue;
+            font-size: 20px;
+
+            transition: all 2s linear;
+        }
+
+        .text:hover{
+
+            color: rgb(16, 16, 21);
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <p class="text">Welcom gyse!!</p>
+</body>
+</html>

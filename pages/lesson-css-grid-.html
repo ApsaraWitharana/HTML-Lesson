@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            background-color:green ;
+            border: 1px solid black;
+            padding: 12px;
+        }
+        .container{
+           
+            display: grid;
+            grid-template-columns: repeat(4,  1fr  );  
+             gap: 12px;      
+
+                    
+        }
+        .box1{
+
+            /* box wl ekk loku krnn */
+
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+        .box6{
+            grid-column: 1/5; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box1">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box box6">Box6</div>
+        
+
+    </div>
+</body>
+</html>

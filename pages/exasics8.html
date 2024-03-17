@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .cercal {
+
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 50px;
+           
+           display: inline;
+            border-radius: 50px;
+            background-color: blue;
+            position: relative;
+            animation-name: square;
+            animation-duration: 2s;
+            /* animation-timing-function: linear; */
+           
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation:  up-down 2s linear infinite ; 
+
+        }
+        
+
+        
+       @keyframes up-down{
+
+
+            0%{
+
+              
+                transform : translateY(0)
+              
+            }
+            
+            
+           50%{
+            transform : translateY(-50px)
+           }
+
+           
+
+           100%{
+
+            transform : translateY(0)
+           }
+
+            
+
+           
+
+        }
+
+        /* .cercal1{
+            animation-delay:0.2;
+        }
+
+        .cercal2{
+            animation-delay:0.5;
+        }
+
+        .cercal3{
+            animation-delay:1;
+        }
+
+        .cercal4{
+            animation-delay: 1.2;
+        }
+
+        .cercal5{
+            animation-delay: 1.4;
+        } */
+        
+        .cercal:nth-child(1){
+            animation-delay: 0.3s;
+        }
+        .cercal:nth-child(2){
+            animation-delay: 0.6s;
+        }
+        .cercal:nth-child(3){
+            animation-delay: 0.9s;
+        }
+        .cercal:nth-child(4){
+            animation-delay: 1.2s;
+        }
+        .cercal:nth-child(5){
+            animation-delay: 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div class=" cercal "></div>
+    <div class=" cercal "></div>
+    <div class=" cercal "></div>
+    <div class=" cercal "></div>
+    <div class=" cercal "></div>
+
+
+</body>
+</html>
