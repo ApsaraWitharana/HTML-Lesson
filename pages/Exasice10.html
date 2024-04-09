@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial,  sans-serif;
+            background-color: burlywood;
+         }
+        header{
+            border: 1px solid black;
+            display: flex;
+            /* flex direction dmmam eke heder ehe peliyt set wenawa */
+            flex-direction: row;
+            /* main acces ek anuwa row nm corosecc werticl // colom nm wertical tiras main ek tiras eke wirudd ek //mad space ekk dgnn*/
+            justify-content:space-between ;
+            background-color: bisque;
+            padding: 12px;
+
+        }
+        #logo-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover; 
+            margin-right:12px;
+            
+            /*  //pic eke penuma hadann */
+        }
+        .logo-con{
+            /* //image ekata ehapattat nm gnnn */
+            display: flex;
+        }
+        .nav-card>ul{
+            /* hedr eke ewa hdnn */
+           display: flex;
+           justify-content: space-between;
+
+        }
+
+        .nav-card > ul{   
+          /* display: flex; */
+        list-style-type: none; 
+        
+     }
+
+       .nav-card>ul{
+     
+     }
+
+     .nav-card>ul>li{
+            /* hedr eke space */
+          margin: 0 8px;
+     }
+        .nav-card>ul>li>a{
+            /* underline ek ayinkrnn */
+          text-decoration: none;
+          color: black;
+
+        }
+
+        .menu-icon{
+            display: none;
+        }
+
+        @media screen and (max-width:656px) {
+
+            .nav-card .menu-icon{
+                display: block;
+            }
+           .nav-card li{
+            visibility: hidden;
+            }
+           
+            
+
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+       
+        <div class="logo-con">
+            <img id="logo-image" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="logo image">
+            <h3>Sachini Apsara</h3>
+        </div>
+        <nav class="nav-card">
+            <ul>
+                <li> <a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Project</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+                <a href="#" class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </ul>
+        </nav>
+    
+        
+
+
+
+
+    </header>
+</body>
+</html>

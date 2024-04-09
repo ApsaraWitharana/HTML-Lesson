@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-9</title>
+    <style>
+         .pic{
+            width: 10vh;
+            height: 10vh;
+            border-radius: 100%;
+            border: 1px solid black;
+            
+            object-fit: cover;
+           
+        }
+
+        .customer details{
+
+            display: flex;
+        }
+
+        .customer-review{
+         
+            background-color: white;
+            padding: 12px;
+            border-radius: 12px;
+            border-radius: 10px;
+            border: 1px solid black;
+             max-height: 100px;
+             overflow-y: auto;
+        }
+
+        .card{
+            border-color: aliceblue;
+            border-radius: 12px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 3px green;
+            padding: 12px;
+            margin: 0 12px;
+             /* align-items: center;
+             justify-content: center; */
+
+        }
+
+        h3{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h2{
+          
+            text-align: end;
+            /* float: inline-end; nam konata gnna */
+        }
+        
+        .container{
+
+            display: grid;
+            flex-direction:row;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(6,1fr);
+            gap: 12px;
+
+        }
+
+        .card-line{
+            width: 100%;
+            display: flex;
+
+        }
+
+        .main{
+             border: 1px solid black;
+            color: black;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        .star{
+             /* display: end;
+             text-align: end; */
+             align-items: center;
+             justify-content: center;
+             
+             
+             /* content ekk scole krnn
+             max-height: 100px;
+             overflow-y: auto; ///x nut puluwan x-akkashayen gnna */
+            
+        }
+
+         @media screen and (max-width:575px) {
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(1 ,1fr);
+              
+            }
+            
+        }
+
+        @media screen and (min-width:575px) and  (max-width:767px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(2 ,1fr);
+
+            }
+            
+        }
+
+          @media screen and (min-width:768px) and  (max-width:991px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(3 ,1fr);
+
+            }
+            
+        }
+
+        @media screen and (min-width:992px) and  (max-width:1199px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+         @media screen and (min-width:1200px) and  (max-width:1399px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Review Contain</h3>
+       
+<div class="container">
+    <div class="card-line">
+        <div class=" card card1">
+            <div class="customer details"></div>
+            <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+           
+             <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+        <div class="star">
+            <!-- image ekk set krnn eke link ekk dnn puluwn <img src="https://images.search.yahoo.com/search/images;_ylt=Awr9zPrzcv5lYVAHLqRXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?p=review+star+png&fr=mcafee#id=19&iurl=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F4%2F5-Star-Rating-PNG-Clipart.png&action=click" alt=""> -->
+        <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+        <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+        <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+        <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+        <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+       
+        </div>
+            <div class="customer-review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                    fugiat dolores hic cumque
+                    exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                    tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea aliquid accusantium quia eveniet id ratione adipisci eligendi repellendus consequuntur incidunt rem blanditiis nulla voluptas, tenetur doloribus quisquam nobis quod.</p>
+                <h2>Sachini Apsara</h2>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="card-line">
+        <div class="card card2">
+            <div class="customer details"></div>
+            <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+            <!-- <img class="star" src="/assets/Image/star.jpeg" alt=""> -->
+            <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+            <div class="star">
+                <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+            </div>
+            <div class="customer-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                fugiat dolores hic cumque
+                exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                tempore.</p>
+            <h2>Sachini Apsara</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-line">
+        <div class="card card3">
+            <div class="customer details"></div>
+                    <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+                    <!-- <img class="star" src="/assets/Image/star.jpeg" alt=""> -->
+                    <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+            <div class="star">
+                <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+            </div>
+            <div class="customer-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                fugiat dolores hic cumque
+                exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                tempore.</p>
+            <h2>Sachini Apsara</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-line">
+        <div class="card card4">
+            <div class="customer details"></div>
+                    <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+                    <!-- <img class="star" src="/assets/Image/star.jpeg" alt=""> -->
+                    <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+            <div class="star">
+                <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+            </div>
+            <div class="customer-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                fugiat dolores hic cumque
+                exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                tempore.</p>
+            <h2>Sachini Apsara</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-line">
+        <div class="card card5">
+            <div class="customer details"></div>
+                <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+                <!-- <img class="star" src="/assets/Image/star.jpeg" alt=""> -->
+                <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+            <div class="star">
+                <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+                <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+            </div>
+            <div class="customer-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                fugiat dolores hic cumque
+                exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                tempore.</p>
+            <h2>Sachini Apsara</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-line">
+        <div class="card card6">
+            <div class="customer details"></div>
+                <img class="pic" src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="profile">
+                <!-- <img class="star" src="/assets/Image/star.jpeg" alt=""> -->
+                <img class="stara" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+            <div class="star">
+            <!-- <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+            <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+            <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+            <img src="/assets/Image/1117px-Star_.svg.png" alt="">
+            <img src="/assets/Image/1117px-Star_.svg.png" alt=""> -->
+            </div>
+            <div class="customer-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis harum obcaecati ducimus debitis,
+                fugiat dolores hic cumque
+                exercitationem perferendis aliquid dolorum unde asperiores officiis, accusantium minima quaerat sint
+                tempore.</p>
+            <h2>Sachini Apsara</h2>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>
