@@ -14,8 +14,6 @@ function Multiply(num1,num2){
 return num1*num2
 }
 
-
-
 console.log("Add:",add(30,20))
 
 console.log("Sub:",sub(30,20))
@@ -29,3 +27,16 @@ console.log('===============')
 console.log(add(10,'hi') +'~' ,typeof add(10,'hi'))
 // nun - number
 console.log(sub(10,'hi') +'~' ,typeof sub(10,'hi'))
+
+
+
+function addNumber(){
+    if(a){
+        let a = "abc"
+ console.log(a)
+    }
+
+    // console.log(a)
+}
+
+addNumber();

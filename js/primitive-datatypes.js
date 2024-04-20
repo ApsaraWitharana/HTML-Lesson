@@ -33,3 +33,11 @@ console.log("Type of phoneNumber",typeof phoneNumber)
 
 let symbol ="a";
 console.log("Type of symbol",typeof symbol)
+
+//7. BigInt ---agata==> n
+
+const number1 = 1212313232323232322322323223223233232n
+const number2 = 100;
+
+const result = number1+BigInt(number2);
+console.log("resut",result)
