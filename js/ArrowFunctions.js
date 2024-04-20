@@ -57,3 +57,18 @@ let student1 = new Student("duvi","galle","duvi@111")
 console.log(student1)
 
 console.log("====================")
+
+//Arrow funcions (ek parameter nm ayin krann puluwan nattanm tiyenn one)
+
+let myFuncions =abc=>{
+
+ abc()
+
+}
+
+let secondFuncions=()=>{
+   console.log("secondFuncion collback")
+}
+
+
+myFuncions(secondFuncions)

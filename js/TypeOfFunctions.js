@@ -73,6 +73,7 @@ if(typeof abc === "function"){
 
 }
 
+
 // literale
 let person = {
      name:"sachini",
