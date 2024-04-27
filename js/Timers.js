@@ -27,6 +27,7 @@ clearInterval(interval)
 
 // second outsite eke funcion ek define kran ek
 let greet = ()=>{
+    
     console.log('hiii funcion define the outsite')
 }
 //funcion hoiste krnn ona nm funcion keyword ekt ekk define krann ona
