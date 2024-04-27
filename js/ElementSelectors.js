@@ -34,7 +34,7 @@ let gettingOnes =document.getElementsByTagName('h1')
 console.log(gettingOnes)
 
 //document query selecters
-//class ek dala tiyen mulm ek one nm query selector ek okkom one nm queryselectorALL EK GNN
+//class ek dala tiyen mulm ek one nm query selector ek// okkom one nm queryselectorALL EK GNN
 //1,id
 
 let button = document.querySelector('#btnCalculate')
@@ -51,3 +51,10 @@ console.log(box)
 //set ekm gnn
 let box2 = document.querySelectorAll('.box')
 console.log(box2)
+
+let bb = document.querySelector('#container,.box')
+console.log(bb)
+//dila tiyena spasification anuwa eyat adal okkom tik refer krnnwa all eken
+let bb1 = document.querySelectorAll('#container,.box')
+console.log(bb1)
+
