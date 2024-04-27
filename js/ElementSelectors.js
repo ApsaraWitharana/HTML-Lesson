@@ -32,3 +32,22 @@ console.log(setBox)
 
 let gettingOnes =document.getElementsByTagName('h1')
 console.log(gettingOnes)
+
+//document query selecters
+//class ek dala tiyen mulm ek one nm query selector ek okkom one nm queryselectorALL EK GNN
+//1,id
+
+let button = document.querySelector('#btnCalculate')
+console.log(button)
+
+//2.class
+let div = document.querySelector('.text-div')
+console.log(div)
+
+// same name unam enne mulin tiyen ek witryi
+let box = document.querySelector('.box')
+console.log(box)
+
+//set ekm gnn
+let box2 = document.querySelectorAll('.box')
+console.log(box2)
