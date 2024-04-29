@@ -43,15 +43,23 @@
 
  //task -04
 
- const date = new Date('2024-04-29');
- const months = ['January','February','March','April','May','June','July','August','September','Octomber','November','December']
- const days = ['Sunday','Monday','Tustay','Wednesday','Thursday','Friday','Saturday'];
- date.getFullYear();
- months[date.getMonth()];
+//  const date = new Date('2024-04-29');
+//  const months = ['January','February','March','April','May','June','July','August','September','Octomber','November','December']
+//  const days = ['Sunday','Monday','Tustay','Wednesday','Thursday','Friday','Saturday'];
+//  date.getFullYear();
+//  months[date.getMonth()];
 
- console.log(date)
- console.log(months)
+//  console.log(date)
+//  console.log(months)
 
+
+// task sorry
+      let i;
+
+		for(let i = 0; i < 10; i++) {
+            console.log("Sorry aneeeeeeeeeee")
+			
+		}
 
 
 
