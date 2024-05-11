@@ -69,7 +69,7 @@ button:hover {
 <body>
 
     <div class="container">
-        <form action="submit.php" method="post">
+        <form id="registrationForm" action="submit.php" method="post">
             <h2>Registration</h2>
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -101,7 +101,7 @@ button:hover {
 
         <script>
             $(document).ready(function(){
-                $('#Registration').submit(function(event){
+                $('#registrationForm').submit(function(event){
                    event.preventDefault();
                    if(validateForm()){
                      alert("form submitted")
@@ -141,9 +141,28 @@ button:hover {
                  } else {
                     $('#passwordError').text("")
                 }
+               
+
+                if (confirmedPassword === null || confirmedPassword === "") {
+                    $("#passwordcError").text(
+                        "Please enter your Confirmed password"
+                    );
+                    isValid = false;
+                } else if (password !== confirmedPassword) {
+                    $("#passwordcError").text("Passwords do not match");
+                    isValid = false;
+                } else {
+                    $("#passwordcError").text("");
+                }
 
                 return isValid
             }
+                       
+            //validating
+
+               function isValidEmail() {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                }
 
         </script>
 
