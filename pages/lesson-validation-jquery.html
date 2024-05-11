@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 12px;
+}
+</style>
+<body>
+
+    <div class="container">
+        <form action="submit.php" method="post">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" >
+                <span class="error" id="userNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" >
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Conform Password:</label>
+                <input type="password" id="passwordc" name="password" >
+                <span class="error" id="passwordcError"></span>
+            </div>
+            <div class="form-group">
+                <button id="Registration" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#Registration').submit(function(event){
+                   event.preventDefault();
+                   if(validateForm()){
+                     alert("form submitted")
+                   }
+                 
+                });
+            });
+
+            function validateForm(){
+                let userName =$('#username').val();
+                let email = $('#email').val();
+                let password = $('#password').val();
+                let passwordc = $('#passwordc').val();
+                 isValid = true
+
+                if(userName === null || userName === ""){
+                    $('#userNameError').text('please enter your full name')
+               
+                }else{
+                     $('#userNameError').text("") 
+                }
+
+                if(email === null || email === ""){
+                     $('#emailError').text('please enter your email')
+                    isValid = false
+                  } else {
+                    $('#emailError').text("")
+                }
+
+                if (password === null || password === "") {
+                    $('#passwordError').text('please enter your password')
+                    isValid = false
+                    
+                } else if (password.length < 6) {
+                      $('#passwordError').text('password nit mach')
+                
+                 } else {
+                    $('#passwordError').text("")
+                }
+
+                return isValid
+            }
+
+        </script>
+
+
+</body>
+
+</html>

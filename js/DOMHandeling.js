@@ -9,7 +9,6 @@ console.log(box.innerHTML)
 
 //box.innerHTML= "hellow"
 box.innerHTML = "<span>set inner html</span>"
-
 console.log(box.innerHTML)
 
 //2.text content - not add to tags only add textcontent return to textcontent Excluding html tags
