@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+  
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.content {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+    display: grid;
+            
+}
+
+.container{
+display: grid;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(4, auto);
+gap: 20px; 
+
+}
+
+/* responcive */
+
+           @media screen and (max-width:575px) {
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(1 ,1fr);
+              
+            }
+            
+        }
+
+        @media screen and (min-width:575px) and  (max-width:767px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(2 ,1fr);
+
+            }
+            
+        }
+
+          @media screen and (min-width:768px) and  (max-width:991px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(3 ,1fr);
+
+            }
+            
+        }
+
+        @media screen and (min-width:992px) and  (max-width:1199px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+         @media screen and (min-width:1200px) and  (max-width:1399px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/WhatsApp Image 2023-10-02 at 18.53.31_c5394a0a.jpg" alt="Profile Picture"
+            class="profile-pic">
+        <div class="info">
+            <h2 class="name">John Doe</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit at diam
+                tristique ultricies. Vivamus luctus, nibh id aliquet consectetur, nisl tortor dignissim turpis, sit amet
+                cursus justo metus id libero.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

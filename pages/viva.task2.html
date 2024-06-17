@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(15, 14, 14);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container{
+        display: grid;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 20px; 
+
+        }
+        
+        .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+        margin: auto; 
+        }
+
+        .pic{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+
+         }
+        
+         .info{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+         
+        .name {
+    font-size: 1.5em;
+    margin: 0;
+     }
+
+    /* responcive */
+
+           @media screen and (max-width:575px) {
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(1 ,1fr);
+              
+            }
+            
+        }
+
+        @media screen and (min-width:575px) and  (max-width:767px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(2 ,1fr);
+
+            }
+            
+        }
+
+          @media screen and (min-width:768px) and  (max-width:991px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(3 ,1fr);
+
+            }
+            
+        }
+
+        @media screen and (min-width:992px) and  (max-width:1199px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+         @media screen and (min-width:1200px) and  (max-width:1399px){
+           
+            .container{
+             display: grid;
+             grid-template-columns:repeat(4 ,1fr);
+
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus 
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/assets/Image/stylish-dp-for-girls-wp-pr.jpg" alt="" class="pic">
+        <div class="info">
+            <h2 class="name">Sachini</h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis voluptatibus
+                culpa, asperiores itaque ex nostrum neque nemo! Omnis, assumenda!</p>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
